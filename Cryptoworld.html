@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptoCosmos</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    
+  </head>
+  <body class="container">
+    <h1>CryptoCosmos</h1>
+
+    <div class="row">
+      <div class="jumbotron col-xs-offset-1 col-xs-9">
+        <p class="text-primary">
+          Welcome to cryptosmos! The website is about an indication of the top 10 cryptocurrencies by market capitalization.
+          
+        </p>
+      </div>
+    </div>
+
+    <div id="app">
+    </div>
+    <div id="app">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td>Rank</td>
+              <td>Name</td>
+              <td>Symbol</td>
+              <td>Price (Euro)</td>
+              <td>1H</td>
+              <td>1D</td>
+              <td>1W</td>
+              <td>Market Cap (Euro)</td>
+          </thead>
+          <tbody>
+            
+          </tbody>
+          
+        </table>
+        
+        [
+        {
+            "id": "bitcoin", 
+            "name": "Bitcoin", 
+            "symbol": "BTC", 
+            "rank": "1", 
+            "price_usd": "7957.31", 
+            "price_btc": "1.0", 
+            "24h_volume_usd": "5037580000.0", 
+            "market_cap_usd": "134830848900", 
+            "available_supply": "16944275.0", 
+            "total_supply": "16944275.0", 
+            "max_supply": "21000000.0", 
+            "percent_change_1h": "-1.31", 
+            "percent_change_24h": "-1.62", 
+            "percent_change_7d": "-11.91", 
+            "last_updated": "1522248567", 
+            "price_eur": "6421.66852965", 
+            "24h_volume_eur": "4065402623.7", 
+            "market_cap_eur": "108810517525"
+        }, 
+        {
+            "id": "ethereum", 
+            "name": "Ethereum", 
+            "symbol": "ETH", 
+            "rank": "2", 
+            "price_usd": "452.915", 
+            "price_btc": "0.0572265", 
+            "24h_volume_usd": "1465850000.0", 
+            "market_cap_usd": "44597939428.0", 
+            "available_supply": "98468674.0", 
+            "total_supply": "98468674.0", 
+            "max_supply": null, 
+            "percent_change_1h": "-1.69", 
+            "percent_change_24h": "-2.57", 
+            "percent_change_7d": "-20.83", 
+            "last_updated": "1522248555", 
+            "price_eur": "365.509198725", 
+            "24h_volume_eur": "1182962937.75", 
+            "market_cap_eur": "35991206087.0"
+        }, 
+        {
+            "id": "ripple", 
+            "name": "Ripple", 
+            "symbol": "XRP", 
+            "rank": "3", 
+            "price_usd": "0.57568", 
+            "price_btc": "0.00007274", 
+            "24h_volume_usd": "271172000.0", 
+            "market_cap_usd": "22505764771.0", 
+            "available_supply": "39094227299.0", 
+            "total_supply": "99992434971.0", 
+            "max_supply": "100000000000", 
+            "percent_change_1h": "-1.37", 
+            "percent_change_24h": "-2.92", 
+            "percent_change_7d": "-17.88", 
+            "last_updated": "1522248541", 
+            "price_eur": "0.4645823952", 
+            "24h_volume_eur": "218839871.58", 
+            "market_cap_eur": "18162489757.0"
+        }, 
+        {
+            "id": "bitcoin-cash", 
+            "name": "Bitcoin Cash", 
+            "symbol": "BCH", 
+            "rank": "4", 
+            "price_usd": "880.545", 
+            "price_btc": "0.111258", 
+            "24h_volume_usd": "329886000.0", 
+            "market_cap_usd": "15006633128.0", 
+            "available_supply": "17042438.0", 
+            "total_supply": "17042438.0", 
+            "max_supply": "21000000.0", 
+            "percent_change_1h": "-0.47", 
+            "percent_change_24h": "-3.1", 
+            "percent_change_7d": "-15.75", 
+            "last_updated": "1522248553", 
+            "price_eur": "710.613023175", 
+            "24h_volume_eur": "266222950.29", 
+            "market_cap_eur": "12110578034.0"
+        }, 
+        {
+            "id": "litecoin", 
+            "name": "Litecoin", 
+            "symbol": "LTC", 
+            "rank": "5", 
+            "price_usd": "134.828", 
+            "price_btc": "0.0170358", 
+            "24h_volume_usd": "339102000.0", 
+            "market_cap_usd": "7527291458.0", 
+            "available_supply": "55828845.0", 
+            "total_supply": "55828845.0", 
+            "max_supply": "84000000.0", 
+            "percent_change_1h": "-2.11", 
+            "percent_change_24h": "-6.06", 
+            "percent_change_7d": "-21.62", 
+            "last_updated": "1522248541", 
+            "price_eur": "108.80821842", 
+            "24h_volume_eur": "273660400.53", 
+            "market_cap_eur": "6074637116.0"
+        }, 
+        {
+            "id": "eos", 
+            "name": "EOS", 
+            "symbol": "EOS", 
+            "rank": "6", 
+            "price_usd": "6.16564", 
+            "price_btc": "0.00077904", 
+            "24h_volume_usd": "725603000.0", 
+            "market_cap_usd": "4663158459.0", 
+            "available_supply": "756313774.0", 
+            "total_supply": "900000000.0", 
+            "max_supply": "1000000000.0", 
+            "percent_change_1h": "-2.09", 
+            "percent_change_24h": "-1.0", 
+            "percent_change_7d": "-2.08", 
+            "last_updated": "1522248551", 
+            "price_eur": "4.9757639646", 
+            "24h_volume_eur": "585572505.045", 
+            "market_cap_eur": "3763238824.0"
+        }, 
+        {
+            "id": "cardano", 
+            "name": "Cardano", 
+            "symbol": "ADA", 
+            "rank": "7", 
+            "price_usd": "0.159464", 
+            "price_btc": "0.00002015", 
+            "24h_volume_usd": "72862900.0", 
+            "market_cap_usd": "4134434376.0", 
+            "available_supply": "25927070538.0", 
+            "total_supply": "31112483745.0", 
+            "max_supply": "45000000000.0", 
+            "percent_change_1h": "-1.39", 
+            "percent_change_24h": "-0.83", 
+            "percent_change_7d": "-27.2", 
+            "last_updated": "1522248553", 
+            "price_eur": "0.12868984", 
+            "24h_volume_eur": "58801453.2435", 
+            "market_cap_eur": "3336550558.0"
+        }, 
+        {
+            "id": "stellar", 
+            "name": "Stellar", 
+            "symbol": "XLM", 
+            "rank": "8", 
+            "price_usd": "0.219093", 
+            "price_btc": "0.00002768", 
+            "24h_volume_usd": "27987300.0", 
+            "market_cap_usd": "4064304925.0", 
+            "available_supply": "18550592329.0", 
+            "total_supply": "103807834721", 
+            "max_supply": null, 
+            "percent_change_1h": "-1.75", 
+            "percent_change_24h": "-1.06", 
+            "percent_change_7d": "-16.47", 
+            "last_updated": "1522248543", 
+            "price_eur": "0.1768113374", 
+            "24h_volume_eur": "22586170.9095", 
+            "market_cap_eur": "3279955039.0"
+        }, 
+        {
+            "id": "neo", 
+            "name": "NEO", 
+            "symbol": "NEO", 
+            "rank": "9", 
+            "price_usd": "57.209", 
+            "price_btc": "0.00722845", 
+            "24h_volume_usd": "108129000.0", 
+            "market_cap_usd": "3718585000.0", 
+            "available_supply": "65000000.0", 
+            "total_supply": "100000000.0", 
+            "max_supply": "100000000.0", 
+            "percent_change_1h": "-1.71", 
+            "percent_change_24h": "-1.3", 
+            "percent_change_7d": "-24.18", 
+            "last_updated": "1522248547", 
+            "price_eur": "46.168521135", 
+            "24h_volume_eur": "87261724.935", 
+            "market_cap_eur": "3000953874.0"
+        }, 
+        {
+            "id": "iota", 
+            "name": "IOTA", 
+            "symbol": "MIOTA", 
+            "rank": "10", 
+            "price_usd": "1.20513", 
+            "price_btc": "0.00015227", 
+            "24h_volume_usd": "27410900.0", 
+            "market_cap_usd": "3349695330.0", 
+            "available_supply": "2779530283.0", 
+            "total_supply": "2779530283.0", 
+            "max_supply": "2779530283.0", 
+            "percent_change_1h": "-1.59", 
+            "percent_change_24h": "0.04", 
+            "percent_change_7d": "-13.92", 
+            "last_updated": "1522248550", 
+            "price_eur": "0.972557987", 
+            "24h_volume_eur": "22121007.4635", 
+            "market_cap_eur": "2703254377.0"
+        }
+    ]
+        
+      </div>
+      
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/static/js/vue2-filters.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
